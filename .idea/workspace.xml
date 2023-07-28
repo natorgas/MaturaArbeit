@@ -5,17 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1fca8dde-a47b-4446-af62-400dfede9a3e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/MaturaArbeit.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MaturaArbeit.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetwork/LoadAI.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetwork/fingerprint.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetwork/keras_metadata.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetwork/saved_model.pb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetwork/variables/variables.data-00000-of-00001" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetwork/variables/variables.index" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NeuralNetworkTrainer.py" beforeDir="false" afterPath="$PROJECT_DIR$/NeuralNetworkTrainerCriticalTimes.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/needed.py" beforeDir="false" afterPath="$PROJECT_DIR$/needed.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
