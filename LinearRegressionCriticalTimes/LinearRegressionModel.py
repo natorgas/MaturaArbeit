@@ -7,11 +7,10 @@ from sklearn.metrics import mean_absolute_error
 # Pfad zur Excel Datei mit den Daten festlegen
 data = pd.read_csv("C:\\Users\\david\\Documents\\Programming\\Python\\MaturaArbeit\\ExcelFile\\DoublePendulum2.csv", sep=",")
 
-data = data[["Alpha", "Beta", "Exponents"]]
+data = data[["Alpha", "Beta", "Times"]]  # Relevante Daten festlegen
+predict = "Times"
 
-predict = "Exponents"
-
-X = np.array(data.drop([predict], axis=1))  # Use 'axis=1' to drop the 'predict' column
+X = data.drop(columns=["Times"])
 Y = np.array(data[predict])
 
 x_train, x_test, y_train, y_test = sklearn.model_selection.train_test_split(X, Y, test_size=0.1)  # Aufteilen der Daten

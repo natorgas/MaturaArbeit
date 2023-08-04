@@ -6,14 +6,12 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import r2_score
 
 # Pfad zur Excel Datei mit den Daten festlegen
-data = pd.read_csv("C:\\Users\\david\\Documents\\Excel\\angles_times_python.csv", sep=";")
+data = pd.read_csv("C:\\Users\\david\\Documents\\Programming\\Python\\MaturaArbeit\\ExcelFile\\DoublePendulum2.csv", sep=",")
 
-# Relevante Daten festlegen
-data = data[["Alpha", "Beta", "Times"]]
-
+data = data[["Alpha", "Beta", "Times"]]  # Relevante Daten festlegen
 predict = "Times"
 
-X = np.array(data.drop([predict], 1))
+X = data.drop(columns=["Times"])
 Y = np.array(data[predict])
 
 # Aufteilen der Daten
