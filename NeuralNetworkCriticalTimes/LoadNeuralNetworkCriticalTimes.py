@@ -1,7 +1,7 @@
 import tensorflow as tf
 import numpy as np
 
-model = tf.keras.models.load_model("C:\\Users\\david\\Documents\\Programming\\Python\\MaturaArbeit\\NeuralNetworkCriticalTimes")
+model = tf.keras.models.load_model("C:\\Users\\david\\Programming\\MyPython\\PycharmProjects\\MaturaArbeit\\NeuralNetworkCriticalTimes")
 
 alpha = float(input("Alpha: "))
 beta = float(input("Beta: "))
