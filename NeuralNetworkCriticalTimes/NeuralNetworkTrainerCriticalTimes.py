@@ -6,7 +6,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import r2_score
 
 # Pfad zur Excel Datei mit den Daten festlegen
-data = pd.read_csv("C:\\Users\\david\\Documents\\Programming\\Python\\MaturaArbeit\\ExcelFile\\DoublePendulumData.csv", sep=",")
+data = pd.read_csv("PATH TO .CSV FILE", sep=",")  # FESTLEGEN DES PFADES ZU DoublePendulumData.csv
 
 data = data[["Alpha", "Beta", "Times"]]  # Relevante Daten festlegen
 predict = "Times"
@@ -41,4 +41,4 @@ r2 = r2_score(y_test, y_pred)
 print(f"r2 = {r2}")
 
 # Speichern des Modells in gewünschtem Ordner
-model.save("C:\\Users\\david\\Programming\\MyPython\\PycharmProjects\\MaturaArbeit\\NeuralNetwork")
+model.save("SPECIFY PATH TO MODEL SAVING LOCATION")  # FESTLEGEN DES PFADES DES GEWÜNSCHTEN SPEICHERORTES

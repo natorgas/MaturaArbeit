@@ -1,4 +1,3 @@
-from coordinate_calculator import x1, y1, x2, y2
 from equationsolver_double_pendulum import sol1
 from equationsolver_double_pendulum import fps
 from manim import *

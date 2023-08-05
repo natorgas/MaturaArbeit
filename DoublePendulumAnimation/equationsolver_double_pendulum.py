@@ -40,11 +40,3 @@ S0_2 = (alpha0_2, beta0_2, v1_0_2, v2_0_2)
 #
 sol1 = odeint(dSdt, y0=S0_1, t=t)  # Numerisches Lösen
 sol2 = odeint(dSdt, y0=S0_2, t=t)
-
-
-# USED FOR PLOTTER
-def many_pendulums(number_of_pendulums, starting_angle_alpha, starting_angle_beta, increment_alpha, increment_beta):
-    solutions = []
-    for i in range(number_of_pendulums):
-        solutions.append(odeint(dSdt, y0=(np.radians(starting_angle_alpha) + i * increment_alpha, np.radians(starting_angle_beta) + i * increment_beta, 0, 0), t=t))
-    return solutions
