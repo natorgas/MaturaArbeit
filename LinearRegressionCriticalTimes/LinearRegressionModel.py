@@ -5,7 +5,7 @@ from sklearn import linear_model
 from sklearn.metrics import mean_absolute_error
 
 # Pfad zur Excel Datei mit den Daten festlegen
-data = pd.read_csv("C:\\Users\\david\\Documents\\Programming\\Python\\MaturaArbeit\\ExcelFile\\DoublePendulum2.csv", sep=",")
+data = pd.read_csv("DoublePendulumData.csv", sep=",")
 
 data = data[["Alpha", "Beta", "Times"]]  # Relevante Daten festlegen
 predict = "Times"

@@ -6,7 +6,7 @@ from sklearn.metrics import mean_absolute_error
 from sklearn.metrics import r2_score
 
 # Pfad zur Excel Datei mit den Daten festlegen
-data = pd.read_csv("C:\\Users\\david\\Documents\\Programming\\Python\\MaturaArbeit\\ExcelFile\\DoublePendulum2.csv", sep=",")
+data = pd.read_csv("C:\\Users\\david\\Documents\\Programming\\Python\\MaturaArbeit\\ExcelFile\\DoublePendulumData.csv", sep=",")
 
 data = data[["Alpha", "Beta", "Times"]]  # Relevante Daten festlegen
 predict = "Times"
