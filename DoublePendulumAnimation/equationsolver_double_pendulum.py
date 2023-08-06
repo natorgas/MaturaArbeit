@@ -29,14 +29,9 @@ t = np.arange(0, duration + duration/number_of_steps, duration/number_of_steps)
 # Anfangswinkel festlegen
 alpha0_1 = np.radians(float(input("alpha0_1 = ")))
 beta0_1 = np.radians(float(input("beta0_1 = ")))
-alpha0_2 = np.radians(float(input("alpha0_2 = ")))
-beta0_2 = np.radians(float(input("beta0_2 = ")))
 
-v1_0_1, v1_0_2, v2_0_1, v2_0_2 = 0, 0, 0, 0  # Anfangsgeschwindigkeiten festlegen
+v1_0_1, v2_0_1 = 0, 0,  # Anfangsgeschwindigkeiten festlegen
 
 S0_1 = (alpha0_1, beta0_1, v1_0_1, v2_0_1)  # Vektor mit allen Anfangsbedingungen
-S0_2 = (alpha0_2, beta0_2, v1_0_2, v2_0_2)
 
-#
 sol1 = odeint(dSdt, y0=S0_1, t=t)  # Numerisches Lösen
-sol2 = odeint(dSdt, y0=S0_2, t=t)
