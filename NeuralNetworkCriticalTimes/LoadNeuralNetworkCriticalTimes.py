@@ -1,7 +1,10 @@
 import tensorflow as tf
 import numpy as np
+import os
 
-model = tf.keras.models.load_model("SPECIFY PATH TO THE FOLDER CONTAINING THE MODEL")  # FESTLEGEN DES PFADES ZUM ORDNER, WELCHER DAS MODELL ENTHÄLT
+dir = os.path.dirname(os.path.abspath(__file__))
+
+model = tf.keras.models.load_model(dir)
 
 alpha = float(input("Alpha: "))
 beta = float(input("Beta: "))
