@@ -1,6 +1,7 @@
 # Maturaarbeit
 Für das Ausführen aller Programme muss [Python](https://www.python.org/downloads/) installiert sein.
-Zur Nutzung der hier hinterlegten Programme sollte am besten das ganze Repository heruntergeladen werden. Dazu muss [Git](https://git-scm.com/downloads) installiert sein. Danach wird 
+Zur Nutzung der hier hinterlegten Programme sollte am besten das ganze Repository heruntergeladen werden. Dazu muss [Git](https://git-scm.com/downloads) installiert sein. Falls mit dem USB Stick auf die Dateien zugegriffen wird, ist die Installation von Git nicht notwendig. In diesem Fall müssen alle folgenden Befehle, welche das Wort "git" enthalten, nicht ausgeführt werden. Bei nicht vorhandenem USB Stick wird nach der 
+Installation von Git
 folgendermassen in einem beliebigen Ordner ein Repository initialisiert:
 ```
 git init
@@ -26,7 +27,7 @@ Um dieses Modell zu testen muss im entsprechenden Ordner folgender Befehl ausgef
 py LinearRegressionModel.py
 ```
 ## NeuralNetworkCriticalTimes
-Um eine Vorhersage mit dem in der Arbeit erwähnten Modell zu tätigen:
+Um eine Vorhersage mit dem künstlichen neuronalen Netz zu tätigen muss folgender Befehl ausgeführt werden:
 ```
 py LoadNeuralNetworkCriticalTimes.py
 ```
